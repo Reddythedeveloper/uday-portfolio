@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set a dark base for the 3D elements to pop */
+body {
+  margin: 0;
+  background-color: #0f0f0f;
+  color: white;
+  overflow-x: hidden;
+}

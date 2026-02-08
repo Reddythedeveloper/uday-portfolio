@@ -1,0 +1,48 @@
+<section id="home" class="relative w-full h-screen overflow-hidden bg-transparent">
+  
+  <div #rendererContainer class="absolute inset-0 z-0"></div>
+
+  <div class="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+    
+    <div class="liquid-glass p-8 md:p-12 rounded-3xl max-w-5xl text-center mx-4 pointer-events-auto transform transition-all hover:scale-[1.01] duration-500 border border-white/10 shadow-[0_0_50px_rgba(0,210,255,0.1)] flex flex-col items-center backdrop-blur-md">
+      
+      <div class="relative w-36 h-36 md:w-44 md:h-44 mb-8 group">
+        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+        
+        <img src="assets/images/profile.png" 
+             alt="Uday Kiran Reddy K" 
+             class="relative w-full h-full rounded-full object-cover border-4 border-black/50 shadow-2xl z-10"
+             onerror="this.style.display='none'" />
+      </div>
+
+      <h2 class="text-cyan-400 font-bold tracking-[0.2em] text-sm md:text-base uppercase mb-4 animate-fade-in-up">
+        Machine Learning Engineer
+      </h2>
+
+      <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-2xl">
+        Uday Kiran Reddy K
+      </h1>
+
+      <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-8 max-w-2xl mx-auto font-light">
+        I engineer intelligent systems that solve real-world problems. 
+        Passionate about deploying scalable <span class="text-white font-semibold">Computer Vision</span> models, optimizing <span class="text-white font-semibold">LLM</span> pipelines, and building robust <span class="text-white font-semibold">Cloud Architectures</span>. 
+        Ready to drive innovation and deliver impactful AI solutions.
+      </p>
+
+      <div class="flex flex-col md:flex-row gap-5 justify-center items-center w-full">
+        <button (click)="scrollTo('projects')" class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.7)] transform hover:-translate-y-1">
+          Explore My Work
+        </button>
+        
+        <a href="assets/resume.pdf" target="_blank" class="px-8 py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white font-semibold rounded-xl transition-all hover:border-cyan-400/50 backdrop-blur-sm">
+          Download Resume
+        </a>
+      </div>
+
+    </div>
+  </div>
+  
+  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-10 opacity-70">
+     <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+  </div>
+</section>

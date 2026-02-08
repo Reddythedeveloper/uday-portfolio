@@ -1,12 +1,31 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+
+
+import { HeroComponent } from './components/hero/hero'; 
+import { ExperienceComponent } from './components/experience/experience';
+import { ProjectsComponent } from './components/projects/projects';
+import { SkillsComponent } from './components/skills/skills';
+import { EducationComponent } from './components/education/education';
+import { TaskbarComponent } from './components/taskbar/taskbar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    CommonModule, 
+    //RouterOutlet,
+    HeroComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    SkillsComponent,
+    EducationComponent,
+    TaskbarComponent
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrls: ['./app.scss']
 })
-export class App {
-  protected readonly title = signal('uday-portfolio');
+export class AppComponent {
+  title = 'uday-portfolio';
 }
