@@ -12,28 +12,28 @@ export class ExperienceComponent {
   experiences = [
     {
       company: 'Publicis Sapient',
-      role: 'Software Engineer Intern',
+      role: 'Software Engineer',
       duration: 'Jan 2024 – July 2024',
       location: 'Bengaluru, India (Hybrid)',
       logo: 'assets/images/experience/publicis.jpg',
       description: [
-        'Collaborated with DTCC on post-trade systems processing $2T+ in daily transactions, ensuring MiFID II compliance.',
-        'Engineered Python + Azure Functions automation and integrated RabbitMQ to orchestrate trade reconciliation, reducing manual effort by 40%.',
-        'Built Grafana dashboards backed by Azure Data Explorer and Cosmos DB for real-time health monitoring, cutting detection time by 50%.',
-        'Led incident response for Oracle DB and SQL Server, preventing 2 production incidents.'
+        'Automated post-trade reconciliation pipelines, ensuring MiFID II compliance for $2T+ in transactions.',
+        'Built scalable Python/Azure ETL framework, saving ~500 manual hours annually.',
+        'Developed real-time Grafana/ADX dashboards, cutting Mean Time to Detection (MTTD) by 50%.',
+        'Led incident response to prevent 2 critical production database outages.'
       ],
       skills: ['Python', 'Azure', 'RabbitMQ', 'Grafana', 'SQL']
     },
     {
       company: 'ArkaShine Innovations',
-      role: 'Software Developer Intern',
-      duration: 'Sept 2023 – Oct 2023',
+      role: 'Software Developer',
+      duration: 'Apr 2023 – Oct 2023',
       location: 'Bengaluru, India (Hybrid)',
       logo: 'assets/images/experience/arkashine.png',
       description: [
-        'Designed and deployed PyTorch models for precision irrigation using IoT sensor + weather data, increasing scheduling accuracy by 30%.',
-        'Optimized inference pipeline, achieving 3x throughput and reducing latency by 50%.',
-        'Contributed to pilot deployments delivering ~$12,000 annual savings for medium-sized farms.'
+        'Deployed PyTorch precision irrigation models, reducing water consumption by 25%.',
+        'Optimized edge inference pipeline, achieving 3x throughput and 50% lower latency.',
+        'Delivered ~$12,000 annual savings for farms through data-driven automation.'
       ],
       skills: ['PyTorch', 'IoT', 'Python', 'Data Science']
     }

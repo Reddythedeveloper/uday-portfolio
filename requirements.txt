@@ -1,0 +1,5 @@
+1) ng build --configuration=production
+
+2) npx http-server dist/uday-portfolio/browser -o
+
+3) scp -r dist/uday-portfolio/browser/* root@64.225.55.2:/var/www/html/

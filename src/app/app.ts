@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-
+import * as AOS from 'aos';
 
 import { HeroComponent } from './components/hero/hero'; 
 import { ExperienceComponent } from './components/experience/experience';
@@ -26,6 +26,19 @@ import { TaskbarComponent } from './components/taskbar/taskbar';
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'uday-portfolio';
+  
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: 'ease-out-cubic',
+        offset: 50
+      });
+    }
+  }
 }
